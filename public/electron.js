@@ -11,6 +11,7 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: true,
     },
+    icon: path.join(__dirname, "./image/icon/512.png"),
   });
   win.maximize();
 
@@ -19,7 +20,7 @@ function createWindow() {
   win.loadURL(
     isDev
       ? "http://localhost:3000"
-      : `file://${path.join(__dirname, "../build/index.html")}`,
+      : `file://${path.join(__dirname, "./index.html")}`,
   );
   // Open the DevTools.
   if (isDev) {
