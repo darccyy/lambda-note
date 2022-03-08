@@ -1,5 +1,6 @@
 {
   "name": "lambda-note",
+  "productName": "Lambda Note",
   "version": "0.1.0",
   "main": "public/electron.js",
   "dependencies": {
